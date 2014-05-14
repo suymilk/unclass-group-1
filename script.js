@@ -19,6 +19,9 @@ $(function () {
 		$.scrollTo(".container", 800);
 	});
 });
-// $('.container').waypoint(function(direction) {
-//   alert('Top of thing hit top of viewport.');
-// });
+
+$(function() {
+	$('.container').waypoint(function(direction) {
+	  alert('Top of thing hit top of viewport.');
+	});
+});
