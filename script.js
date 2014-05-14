@@ -3,7 +3,11 @@ $(function() {
 });
 
 $(function() {
-	$(".byline").delay(2000).fadeIn("slow");
+	$("#byline").delay(2000).fadeIn("slow");
+});
+
+$(function() {
+	$("#teaser").delay(2000).fadeIn("slow");
 });
 
 $(function() {
