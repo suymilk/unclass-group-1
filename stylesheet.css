@@ -25,17 +25,17 @@ body {
 	content: '';
 	position: absolute;
 	border-style: solid;
-	border-width: 15px 15px 15px 0;
+	border-width: 0px 0px 15px 15px;
 	border-color: transparent #eeeeee;
 	display: block;
 	width: 0;
 	z-index: 1;
-	margin-top: -15px;
-	left: -15px;
-	top: 72%;
+	bottom: -15px;
+	left: 10%;
 }
 #bubble2 {
 	display: none;
+	color: #F22D55;
 	font-family: "Lato", sans-serif;
 	font-size: 3.8em;
 	position: relative;
@@ -52,17 +52,17 @@ body {
 	content: '';
 	position: absolute;
 	border-style: solid;
-	border-width: 15px 0 15px 15px;
+	border-width: 0px 0px 15px 15px;
 	border-color: transparent #eeeeee;
 	display: block;
 	width: 0;
 	z-index: 1;
-	margin-top: -5px;
-	right: -15px;
-	top: 24%;
+	bottom: -15px;
+	left: 5%;
 }
-#byline {
-	position: absolute;
+.byline {
+	display: none;
+	position: relative;
 	margin-top: 7%;
 	text-align: center;
 	font-weight: 400;
@@ -71,6 +71,11 @@ body {
 #titlepg {
 	margin-top: 5%;
 }
-/*.container {
-	background: blue;
-}*/
+#button {
+	display: none;
+	margin-left: 40%;
+	margin-top: 30%;
+}
+.btn-default {
+	background: none;
+}
