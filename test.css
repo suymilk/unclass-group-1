@@ -1,0 +1,87 @@
+
+html, body {
+	height: 100%;
+	font-family: "Lato", sans-serif;
+}
+
+#container{
+	height: 2800px;
+	max-width: 1424px;
+	background-color: #F5EED2;
+}
+
+#jordan{
+	margin-top:10%;
+	width:100%;
+}
+
+
+
+#frame-left{
+	position: absolute;
+	position: fixed;
+	height: 600px;
+	width: 672px;
+	background-color: red;
+	float: left;
+	margin: 20px;
+
+}
+#frame-right{
+
+	height: 1500px;
+	width:50%;
+	background-color: blue;
+	float: right;
+}
+
+#video{
+background-color: green;
+height: 200px;
+width: 80%;
+position: relative;
+left: 10%;
+top: 10%;
+
+}
+
+#quote{
+	background-color: red;
+	height: 200px;
+	width: 80%;
+	position: relative;
+	left: 10%;
+	top: 20%;
+
+}
+
+#text{
+	background-color: yellow;
+	height: 300px;
+	width: 80%;
+	position: relative;
+	left: 10%;
+	top: 30%;
+
+
+}
+
+#new-container{
+
+	background-color: purple;
+	height:800px;
+	width: 100%;
+	float: right;
+}
+
+
+.absolute {
+    position: absolute;
+}
+
+
+
+
+
+
+
