@@ -20,8 +20,9 @@ $(function () {
 	});
 });
 
-$(function() {
-	$('.container').waypoint(function(direction) {
-	  alert('Top of thing hit top of viewport.');
-	});
-});
+// use this for nav bar changes
+// $(function() {
+// 	$('.container').waypoint(function(direction) {
+// 	  alert('Top of thing hit top of viewport.');
+// 	});
+// });

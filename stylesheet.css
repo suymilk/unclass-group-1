@@ -81,10 +81,32 @@ html, body {
 	background: none;
 }
 .container-fluid {
+	width: 100%;
 	max-width: 1824px;
 	height: 100%;
 	background-image:url("couple.jpg");
 }
 .container {
 	height: 100%;
+}
+.content {
+	margin-top: 1%;
+}
+.static {
+	background: blue; 
+	margin-top: 20px; 
+	height: 500px;
+	clear: both;
+}
+.static.affix {
+	top: 10px;
+	background: blue; 
+	position: fixed;
+	height: 500px;
+	width: 40.75%;
+}
+.dynamic {
+	background: green;
+	float: right;
+	margin-top: 28px;
 }
