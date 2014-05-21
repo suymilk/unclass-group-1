@@ -92,21 +92,28 @@ html, body {
 .content {
 	margin-top: 1%;
 }
-.static {
-	background: blue; 
-	margin-top: 20px; 
-	height: 500px;
-	clear: both;
-}
-.static.affix {
-	top: 10px;
-	background: blue; 
-	position: fixed;
-	height: 500px;
-	width: 40.75%;
+.container .content {
+	width: 100%;
 }
 .dynamic {
 	background: green;
 	float: right;
-	margin-top: 28px;
+}
+#intro {
+	margin-top: 20%;
+	font-family: "Lato", sans-serif;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+}
+p {
+	font-size: 1.5em;
+}
+#subhead1, #subhead2, #subhead3 {
+	font-family: "Oswald", sans-serif;
+	margin-top: 5%;
+}
+.stuck {
+	position: fixed;
+	top: 100px;
 }
