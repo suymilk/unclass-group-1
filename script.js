@@ -1,45 +1,51 @@
+// have elements of landing page fade in slowly
+var fadeInSlow = function(thing) {
+	$(thing).delay(2000).fadeIn("slow");
+};
+
+// make element sticky on scroll down by position: fixed
+var makeSticky = function(thing) {
+	$(thing).waypoint("sticky", {
+		offset: 10
+	});
+};
+
+// make previous element unsticky on scroll down, make next element sticky
+var makeUnsticky = function(previousElem, nextElem) {
+	$(nextElem).waypoint(function() {
+		$(previousElem).waypoint("unsticky"); 
+		}, { offset: 50});
+		// $(previousElem).css("margin-top", "90%");
+};
+
 $(document).ready(function () {
+
+	// fade in speech bubble first
 	$(function() {
 		$("#bubble2").delay(1000).fadeIn("slow");
 	});
 
-	$(function() {
-		$("#byline").delay(2000).fadeIn("slow");
-	});
+	// then the rest of the elements
+	fadeInSlow("#byline");
+	fadeInSlow("#teaser");
+	fadeInSlow("#button");
 
-	$(function() {
-		$("#teaser").delay(2000).fadeIn("slow");
-	});
-
-	$(function() {
-		$("#button").delay(2000).fadeIn("slow");
-	});
-
+	// scroll to intro page on button click
 	$(function () {
 		$("button").on("click", function() {
 			$.scrollTo(".container", 800);
 		});
 	});	
 
-	$("#sec1").waypoint("sticky", {
-		offset: 50
-	});
+	makeSticky("#sec1");
 
-	$("#subhead2").waypoint(function() {
-		$("#sec1").waypoint("unsticky")
-	});
+	makeUnsticky("#sec1", "#clear1");
 
-	$("#sec2").waypoint("sticky", {
-		offset: 50
-	});
+	makeSticky("#sec2");
 
-	$("#subhead3").waypoint(function() {
-		$("#sec2").waypoint("unsticky")
-	});
+	makeUnsticky("#sec2", "#clear2");
 
-	$("#sec3").waypoint("sticky", {
-		offset: 50
-	});
+	makeSticky("#sec3");
 
 });
 

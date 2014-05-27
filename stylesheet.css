@@ -94,6 +94,7 @@ html, body {
 }
 .container .content {
 	width: 100%;
+	clear: both;
 }
 .dynamic {
 	background: green;
@@ -115,5 +116,8 @@ p {
 }
 .stuck {
 	position: fixed;
-	top: 100px;
+	top: 28px;
+}
+#clear1, #clear2, #clear3 {
+	height: 1%;
 }
