@@ -13,12 +13,24 @@ var makeSticky = function(thing) {
 // make previous element unsticky on scroll down, make next element sticky
 var makeUnsticky = function(previousElem, nextElem) {
 	$(nextElem).waypoint(function() {
-		$(previousElem).waypoint("unsticky"); 
-		}, { offset: 50});
-		// $(previousElem).css("margin-top", "90%");
+		$(previousElem).addClass("unstuck");
+	});
+	// $(nextElem).waypoint(function() {
+	// 	$(previousElem).waypoint("unsticky"); 
+	// 	}, { offset: 50});
 };
 
+// make fixed element maintain before-fixed width
+var stickyWidthFix = function() {
+	var fixed = $(".col-md-6");
+	var width = fixed.width();
+	fixed.width(width);
+}
+
+
 $(document).ready(function () {
+
+	stickyWidthFix();
 
 	// fade in speech bubble first
 	$(function() {

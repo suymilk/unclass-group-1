@@ -121,3 +121,7 @@ p {
 #clear1, #clear2, #clear3 {
 	height: 1%;
 }
+.unstuck {
+	position: relative;
+	margin-top: 95%;
+}
