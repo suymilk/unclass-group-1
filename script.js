@@ -67,6 +67,8 @@ $(document).ready(function () {
 	// 	});
 	// });
 
+	popPill("#introvid", "#introVidPt");
+
 	popPill("#subhead1", "#sec1");
 
 	popPill("#subhead2", "#sec2");
