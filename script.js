@@ -38,6 +38,12 @@ var popPill = function(wayPoint, navPoint) {
 	});
 };
 
+var navbarScroll = function(clickImg, scrollToHere) {
+	$(clickImg).on("click", function() {
+		$.scrollTo(scrollToHere, 600);
+	});
+};
+
 $(document).ready(function () {
 
 	stickyWidthFix();
@@ -67,27 +73,24 @@ $(document).ready(function () {
 	// 	});
 	// });
 
-	popPill("#introvid", "#introVidPt");
+	navbarScroll("#secIntro", "#introContainer");
+	navbarScroll("#introVidPt", "#introVid");
+	navbarScroll("#sec1", "#container1");
+	navbarScroll("#sec2", "#container2");
+	navbarScroll("#sec3", "#container3");
+	navbarScroll("#sec4", "#container4");
 
-	popPill("#subhead1", "#sec1");
-
-	popPill("#subhead2", "#sec2");
-
-	popPill("#subhead3", "#sec3");
-
-	popPill("#subhead4", "#sec4");
-
+	popPill("#introVid", "#introVidPt");
+	popPill("#container1", "#sec1");
+	popPill("#container2", "#sec2");
+	popPill("#container3", "#sec3");
+	popPill("#container4", "#sec4");
 
 	makeSticky("#sec1left");
-
 	makeUnsticky("#sec1left", "#clear1");
-
 	makeSticky("#sec2left");
-
 	makeUnsticky("#sec2left", "#clear2");
-
 	makeSticky("#sec3left");
-
 	makeUnsticky("#sec3left", "#clear3")
 
 });

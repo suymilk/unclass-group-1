@@ -136,9 +136,21 @@ p {
 	top: 10px;
 	left: 93%;
 }
-img:first-of-type {
-	margin-top: 10px;
+.navbar:first-of-type {
+	margin-top: 40px;
+}
+img:hover {
+	cursor: pointer;
 }
 video {
 	margin: 0 auto;
+}
+.navbar p {
+	font-size: 0.8em;
+}
+.navbar {
+	padding-left: 10px;
+	padding-top: 150px;
+	background-image: url("packaging.png");
+	padding-bottom: 90px;
 }
