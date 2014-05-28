@@ -30,11 +30,6 @@ var stickyWidthFix = function() {
 
 $(document).ready(function () {
 
-	var realheight = $("#sec1right");
-	var height = realheight.height();
-	var changeheight = $("#moving");
-	changeheight.height(height);
-
 	stickyWidthFix();
 
 	// fade in speech bubble first
@@ -54,6 +49,15 @@ $(document).ready(function () {
 		});
 	});	
 
+	// navbar!
+	$(function() {
+		$('.container.content').waypoint(function(direction) {
+		  alert('Top of thing hit top of viewport.');
+		});
+	});
+
+	// makeSticky(".navbar");
+
 	makeSticky("#sec1left");
 
 	makeUnsticky("#sec1left", "#clear1");
@@ -70,10 +74,8 @@ $(document).ready(function () {
 
 
 
-
-// use this for nav bar changes
 // $(function() {
-// 	$('.container').waypoint(function(direction) {
-// 	  alert('Top of thing hit top of viewport.');
+// 	$('#intro').waypoint(function(direction) {
+// 	  $(".navbar").css("display", "block");
 // 	});
 // });

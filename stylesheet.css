@@ -130,3 +130,12 @@ p {
 #sec1right, #sec2right, #sec3right {
 	margin-bottom: 40px;
 }
+.navbar {
+	z-index: -1;
+	position: fixed;
+	top: 10px;
+	left: 93%;
+}
+img:first-of-type {
+	margin-top: 10px;
+}
