@@ -14,7 +14,7 @@ var makeSticky = function(thing) {
 var makeUnsticky = function(previousElem, nextElem) {
 	$(nextElem).waypoint(function() {
 		$(previousElem).addClass("unstuck");
-	});
+		}, {offset: 40});
 	// $(nextElem).waypoint(function() {
 	// 	$(previousElem).waypoint("unsticky"); 
 	// 	}, { offset: 50});
@@ -29,6 +29,11 @@ var stickyWidthFix = function() {
 
 
 $(document).ready(function () {
+
+	var realheight = $("#sec1right");
+	var height = realheight.height();
+	var changeheight = $("#moving");
+	changeheight.height(height);
 
 	stickyWidthFix();
 
@@ -49,15 +54,17 @@ $(document).ready(function () {
 		});
 	});	
 
-	makeSticky("#sec1");
+	makeSticky("#sec1left");
 
-	makeUnsticky("#sec1", "#clear1");
+	makeUnsticky("#sec1left", "#clear1");
 
-	makeSticky("#sec2");
+	makeSticky("#sec2left");
 
-	makeUnsticky("#sec2", "#clear2");
+	makeUnsticky("#sec2left", "#clear2");
 
-	makeSticky("#sec3");
+	makeSticky("#sec3left");
+
+	makeUnsticky("#sec3left", "#clear3")
 
 });
 

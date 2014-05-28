@@ -93,6 +93,7 @@ html, body {
 	margin-top: 1%;
 }
 .container .content {
+	height: 100%;
 	width: 100%;
 	clear: both;
 }
@@ -113,15 +114,19 @@ p {
 #subhead1, #subhead2, #subhead3 {
 	font-family: "Oswald", sans-serif;
 	margin-top: 5%;
+	clear: both;
 }
 .stuck {
 	position: fixed;
 	top: 28px;
 }
-#clear1, #clear2, #clear3 {
-	height: 1%;
+#clear1, #clear2, #clear3, #clear4 {
+	height: 5px;
 }
 .unstuck {
 	position: relative;
-	margin-top: 95%;
+
+}
+#sec1right, #sec2right, #sec3right {
+	margin-bottom: 40px;
 }
