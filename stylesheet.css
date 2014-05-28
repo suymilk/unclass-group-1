@@ -111,7 +111,7 @@ html, body {
 p {
 	font-size: 1.5em;
 }
-#subhead1, #subhead2, #subhead3 {
+#subhead1, #subhead2, #subhead3, #subhead4 {
 	font-family: "Oswald", sans-serif;
 	margin-top: 5%;
 	clear: both;
@@ -127,7 +127,7 @@ p {
 	position: relative;
 
 }
-#sec1right, #sec2right, #sec3right {
+#sec1right, #sec2right, #sec3right, #sec4right {
 	margin-bottom: 40px;
 }
 .navbar {

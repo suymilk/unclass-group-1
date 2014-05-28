@@ -25,8 +25,18 @@ var stickyWidthFix = function() {
 	var fixed = $(".col-md-6");
 	var width = fixed.width();
 	fixed.width(width);
-}
+};
 
+var popPill = function(wayPoint, navPoint) {
+	$(wayPoint).waypoint(function(direction) {
+		if (direction == "down") {
+			$(navPoint).attr("src", "poppedpill.png");
+		}
+		else {
+			$(navPoint).attr("src", "pinkpill.png");
+		};
+	});
+};
 
 $(document).ready(function () {
 
@@ -50,13 +60,21 @@ $(document).ready(function () {
 	});	
 
 	// navbar!
-	$(function() {
-		$('.container.content').waypoint(function(direction) {
-		  alert('Top of thing hit top of viewport.');
-		});
-	});
+	// $(function() {
+	// 	$('#subhead1').waypoint(function(direction) {
+	// 		$("#secIntro").attr("src", "pinkpill.png");
+	// 		$("#sec1").attr("src", "poppedpill.png");
+	// 	});
+	// });
 
-	// makeSticky(".navbar");
+	popPill("#subhead1", "#sec1");
+
+	popPill("#subhead2", "#sec2");
+
+	popPill("#subhead3", "#sec3");
+
+	popPill("#subhead4", "#sec4");
+
 
 	makeSticky("#sec1left");
 
