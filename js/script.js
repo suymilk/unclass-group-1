@@ -30,10 +30,10 @@ var stickyWidthFix = function() {
 var popPill = function(wayPoint, navPoint) {
 	$(wayPoint).waypoint(function(direction) {
 		if (direction == "down") {
-			$(navPoint).attr("src", "poppedpill.png");
+			$(navPoint).attr("src", "pics/poppedpill.png");
 		}
 		else {
-			$(navPoint).attr("src", "pinkpill.png");
+			$(navPoint).attr("src", "pics/pinkpill.png");
 		};
 	});
 };
@@ -66,14 +66,6 @@ $(document).ready(function () {
 			$.scrollTo(".container", 800);
 		});
 	});	
-
-	// navbar!
-	// $(function() {
-	// 	$('#subhead1').waypoint(function(direction) {
-	// 		$("#secIntro").attr("src", "pinkpill.png");
-	// 		$("#sec1").attr("src", "poppedpill.png");
-	// 	});
-	// });
 
 	popPill("#introVid", "#introVidPt");
 	popPill("#container1", "#sec1");

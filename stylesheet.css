@@ -22,7 +22,7 @@ html, body {
 	content: '';
 	position: absolute;
 	border-style: solid;
-	border-width: 5px 0px 15px 10px;
+	border-width: 0px 0px 15px 15px;
 	border-color: transparent white;
 	display: block;
 	width: 0;
@@ -84,7 +84,7 @@ html, body {
 	width: 100%;
 	max-width: 1824px;
 	height: 100%;
-	background-image:url("couple.jpg");
+	background-image:url("pics/couple.jpg");
 }
 .content {
 	margin-top: 1%;
@@ -98,11 +98,11 @@ html, body {
 	float: right;
 }
 #intro {
-	margin-top: 20%;
 	font-family: "Lato", sans-serif;
-	height: 100%;
 	width: 100%;
 	text-align: left;
+	margin-top: 25%;
+	position: relative;
 }
 #introContainer {
 	height: 100%;
@@ -155,7 +155,10 @@ video {
 	left: 93%;
 	padding-left: 10px;
 	padding-top: 50px;
-	background-image: url("packaging.png");
+	background-image: url("pics/packaging.png");
 	padding-bottom: 30px;
 	border: 0 #ffffff;
+}
+h1 {
+	text-transform: uppercase;
 }
