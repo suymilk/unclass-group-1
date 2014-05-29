@@ -129,9 +129,6 @@ p {
 #sec1right, #sec2right, #sec3right, #sec4right {
 	margin-bottom: 40px;
 }
-.navbar:first-of-type {
-	margin-top: 30px;
-}
 img {
 	width: 30px;
 	height: 30px;
@@ -153,7 +150,7 @@ video {
 .navbar {
 	z-index: -1;
 	position: fixed;
-	top: 10px;
+	top: 5px;
 	margin-left: 5px;
 	left: 93%;
 	padding-left: 10px;
