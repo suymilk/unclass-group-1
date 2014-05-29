@@ -40,7 +40,9 @@ var popPill = function(wayPoint, navPoint) {
 
 var navbarScroll = function(clickImg, scrollToHere) {
 	$(clickImg).on("click", function() {
-		$.scrollTo(scrollToHere, 600);
+		$.scrollTo(scrollToHere, 600, {
+			offset: 10
+		});
 	});
 };
 
@@ -73,18 +75,18 @@ $(document).ready(function () {
 	// 	});
 	// });
 
+	popPill("#introVid", "#introVidPt");
+	popPill("#container1", "#sec1");
+	popPill("#container2", "#sec2");
+	popPill("#container3", "#sec3");
+	popPill("#container4", "#sec4");
+
 	navbarScroll("#secIntro", "#introContainer");
 	navbarScroll("#introVidPt", "#introVid");
 	navbarScroll("#sec1", "#container1");
 	navbarScroll("#sec2", "#container2");
 	navbarScroll("#sec3", "#container3");
 	navbarScroll("#sec4", "#container4");
-
-	popPill("#introVid", "#introVidPt");
-	popPill("#container1", "#sec1");
-	popPill("#container2", "#sec2");
-	popPill("#container3", "#sec3");
-	popPill("#container4", "#sec4");
 
 	makeSticky("#sec1left");
 	makeUnsticky("#sec1left", "#clear1");

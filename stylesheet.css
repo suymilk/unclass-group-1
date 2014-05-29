@@ -86,14 +86,10 @@ html, body {
 	height: 100%;
 	background-image:url("couple.jpg");
 }
-.container {
-	height: 100%;
-}
 .content {
 	margin-top: 1%;
 }
 .container .content {
-	height: 100%;
 	width: 100%;
 	clear: both;
 }
@@ -107,6 +103,9 @@ html, body {
 	height: 100%;
 	width: 100%;
 	text-align: left;
+}
+#introContainer {
+	height: 100%;
 }
 p {
 	font-size: 1.5em;
@@ -130,27 +129,36 @@ p {
 #sec1right, #sec2right, #sec3right, #sec4right {
 	margin-bottom: 40px;
 }
-.navbar {
-	z-index: -1;
-	position: fixed;
-	top: 10px;
-	left: 93%;
-}
 .navbar:first-of-type {
-	margin-top: 40px;
+	margin-top: 30px;
+}
+img {
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	margin-left: 40px;
 }
 img:hover {
 	cursor: pointer;
 }
 video {
-	margin: 0 auto;
+	margin-top: 3%
 }
 .navbar p {
-	font-size: 0.8em;
+	font-size: 0.7em;
+	margin-bottom: 15px;
+	text-align: right;
+	margin-right: 12px;
 }
 .navbar {
+	z-index: -1;
+	position: fixed;
+	top: 10px;
+	margin-left: 5px;
+	left: 93%;
 	padding-left: 10px;
-	padding-top: 150px;
+	padding-top: 50px;
 	background-image: url("packaging.png");
-	padding-bottom: 90px;
+	padding-bottom: 30px;
+	border: 0 #ffffff;
 }
