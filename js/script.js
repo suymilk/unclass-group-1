@@ -3,23 +3,6 @@ var fadeInSlow = function(thing) {
 	$(thing).delay(2000).fadeIn("slow");
 };
 
-// make element sticky on scroll down by position: fixed
-var makeSticky = function(thing) {
-	$(thing).waypoint("sticky", {
-		offset: 10
-	});
-};
-
-// make previous element unsticky on scroll down, make next element sticky
-var makeUnsticky = function(previousElem, nextElem) {
-	$(nextElem).waypoint(function() {
-		$(previousElem).addClass("unstuck");
-		}, {offset: 40});
-	// $(nextElem).waypoint(function() {
-	// 	$(previousElem).waypoint("unsticky"); 
-	// 	}, { offset: 50});
-};
-
 // make fixed element maintain before-fixed width
 var stickyWidthFix = function() {
 	var fixed = $(".col-md-6");
@@ -31,9 +14,12 @@ var popPill = function(wayPoint, navPoint) {
 	$(wayPoint).waypoint(function(direction) {
 		if (direction == "down") {
 			$(navPoint).attr("src", "pics/poppedpill.png");
+			$(document.body).trigger("sticky_kit:recalc")
+
 		}
 		else {
 			$(navPoint).attr("src", "pics/pinkpill.png");
+			$(document.body).trigger("sticky_kit:recalc")
 		};
 	});
 };
@@ -80,19 +66,9 @@ $(document).ready(function () {
 	navbarScroll("#sec3", "#container3");
 	navbarScroll("#sec4", "#container4");
 
-	makeSticky("#sec1left");
-	makeUnsticky("#sec1left", "#clear1");
-	makeSticky("#sec2left");
-	makeUnsticky("#sec2left", "#clear2");
-	makeSticky("#sec3left");
-	makeUnsticky("#sec3left", "#clear3")
 
+	$(".item").stick_in_parent()
+		.on("sticky_kit:stick", function(e) {
+    		$(".is_stuck").parent().css('position', '');
+  		});
 });
-
-
-
-// $(function() {
-// 	$('#intro').waypoint(function(direction) {
-// 	  $(".navbar").css("display", "block");
-// 	});
-// });

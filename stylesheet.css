@@ -86,17 +86,6 @@ html, body {
 	height: 100%;
 	background-image:url("pics/couple.jpg");
 }
-.content {
-	margin-top: 1%;
-}
-.container .content {
-	width: 100%;
-	clear: both;
-}
-.dynamic {
-	background: green;
-	float: right;
-}
 #intro {
 	font-family: "Lato", sans-serif;
 	width: 100%;
@@ -104,42 +93,30 @@ html, body {
 	margin-top: 25%;
 	position: relative;
 }
-#introContainer {
+#introContainer, #introVid {
 	height: 100%;
 }
+#introVid {
+	padding-top: 3%;
+}
 p {
-	font-size: 1.5em;
-}
-#subhead1, #subhead2, #subhead3, #subhead4 {
-	font-family: "Oswald", sans-serif;
-	margin-top: 5%;
-	clear: both;
-}
-.stuck {
-	position: fixed;
-	top: 28px;
-}
-#clear1, #clear2, #clear3, #clear4 {
-	height: 5px;
-}
-.unstuck {
-	position: relative;
-
+	margin-top: 3%;
+	font-size: 1.2em;
 }
 #sec1right, #sec2right, #sec3right, #sec4right {
 	margin-bottom: 40px;
 }
-img {
+#sec1right {
+	float: right;
+}
+.navbar img {
 	width: 30px;
 	height: 30px;
 	margin-top: 5px;
 	margin-left: 40px;
 }
-img:hover {
+.navbar img:hover {
 	cursor: pointer;
-}
-video {
-	margin-top: 3%
 }
 .navbar p {
 	font-size: 0.7em;
@@ -156,9 +133,27 @@ video {
 	padding-left: 10px;
 	padding-top: 50px;
 	background-image: url("pics/packaging.png");
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	border: 0 #ffffff;
 }
 h1 {
 	text-transform: uppercase;
+}
+h2 {
+	font-family: "Oswald", sans-serif;
+}
+img {
+	width: 100%;
+}
+#clear1, #clear2, #clear3, #clear4 {
+	height: 10px;
+}
+.subhead {
+	margin-bottom: 1%;
+}
+#container1, #container2, #container3, #container4 {
+	margin-bottom: 5%;
+}
+.is_stuck {
+	float: right;
 }
