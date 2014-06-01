@@ -32,6 +32,31 @@ var navbarScroll = function(clickImg, scrollToHere) {
 	});
 };
 
+var autoPlay = function(wayPoint, video, pausePoint) {
+	
+	var myVideo = document.getElementById(video)
+
+	$(wayPoint).waypoint(function() {
+		myVideo.play();
+	}, {
+		triggerOnce: true
+	});
+
+	$(pausePoint).waypoint(function() {
+		myVideo.pause();
+	});
+};
+
+var stopAutoPlay = function(wayPoint, video) {
+
+	var myVideo = document.getElementById(video)
+
+	$(wayPoint).waypoint(function() {
+		myVideo.pause();
+	}, {offset: "bottom-in-view"})
+}
+
+
 $(document).ready(function () {
 
 	stickyWidthFix();
@@ -65,6 +90,8 @@ $(document).ready(function () {
 	navbarScroll("#sec2", "#container2");
 	navbarScroll("#sec3", "#container3");
 	navbarScroll("#sec4", "#container4");
+
+	autoPlay("#introVid", "coupleintro", "#container1");
 
 
 	$(".item").stick_in_parent()
