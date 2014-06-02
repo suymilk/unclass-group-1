@@ -164,6 +164,7 @@ img {
 	height: 10px;
 }
 .subhead {
+	width: 100%;
 	margin-bottom: 1%;
 }
 #container1, #container2, #container3, #container4 {
