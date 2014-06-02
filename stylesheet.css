@@ -177,11 +177,12 @@ h3 {
 #bijan {
 	color: #2b3865;
 	position: relative;
-	padding-top: 300%;
+	padding-top: 250%;
+	text-align: right;
 }
 #julia {
-	text-align: right;
+	text-align: left;
 	position: relative;
-	padding-top: 200%;
+	padding-top: 150%;
 	color: #f45676;
 }
