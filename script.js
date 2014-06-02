@@ -38,7 +38,7 @@ $(document).ready(function () {
 	});
 
 	$("#sec3").waypoint("sticky", {
-		offset: 50
+		offset: 400
 	});
 
 });
