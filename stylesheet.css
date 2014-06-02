@@ -95,11 +95,12 @@ html, body {
 	margin-top: 25%;
 	position: relative;
 }
-#introContainer, #introVid{
+#introContainer, #introVid, #closingVid{
 	height: 100%;
 }
-#introVid {
+#introVid, #closingVid {
 	padding-top: 3%;
+	padding-bottom: 3%;
 }
 #pullquote {
 	font-family: "Lato", sans-serif;

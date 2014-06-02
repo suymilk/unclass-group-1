@@ -87,6 +87,17 @@ $(document).ready(function () {
 	autoPlay("#container2", "unequalinfo1", "#bottomvideo");
 	autoPlay("#bottomvideo", "unequalinfo2", "#container3");
 
+	$(function() {
+		
+		var myVideo = document.getElementById("closing")
+
+		$(closingVid).waypoint(function() {
+			myVideo.play();
+		}, {
+			triggerOnce: true
+		});
+	});
+
 	$(".item").stick_in_parent()
 		.on("sticky_kit:stick", function(e) {
     		$(".is_stuck").parent().css('position', '');
