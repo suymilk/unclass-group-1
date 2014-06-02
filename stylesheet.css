@@ -79,7 +79,8 @@ html, body {
 }
 .btn-default {
 	background: none;
-	font-size: 1.3em;
+	background-color: #eee;
+	font-size: 1.2em;
 }
 .container-fluid {
 	width: 100%;
@@ -94,11 +95,22 @@ html, body {
 	margin-top: 25%;
 	position: relative;
 }
-#introContainer, #introVid {
+#introContainer, #introVid{
 	height: 100%;
 }
 #introVid {
 	padding-top: 3%;
+}
+#pullquote {
+	font-family: "Lato", sans-serif;
+	width: 100%;
+	text-align: left;
+	margin-top: 25%;
+	position: relative;
+	color: #2b3865;
+}
+#pullquoteContainer {
+	height: 100%;
 }
 p {
 	margin-top: 3%;
@@ -121,7 +133,7 @@ p {
 }
 .navbar p {
 	font-size: 0.7em;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	text-align: right;
 	margin-right: 12px;
 }
@@ -132,7 +144,7 @@ p {
 	margin-left: 5px;
 	left: 93%;
 	padding-left: 10px;
-	padding-top: 50px;
+	padding-top: 42px;
 	background-image: url("pics/packaging.png");
 	padding-bottom: 20px;
 	border: 0 #ffffff;

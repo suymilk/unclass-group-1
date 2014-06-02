@@ -47,15 +47,15 @@ var autoPlay = function(wayPoint, video, pausePoint) {
 	});
 };
 
-var stopAutoPlay = function(wayPoint, video) {
+var autoPlayforSticky = function(wayPoint, video) {
 
 	var myVideo = document.getElementById(video)
 
-	$(wayPoint).waypoint(function() {
-		myVideo.pause();
-	}, {offset: "bottom-in-view"})
+	$(wayPoint).waypoint(function () {
+		myVideo.play();
+	});
 }
-
+ 
 
 $(document).ready(function () {
 
@@ -83,6 +83,7 @@ $(document).ready(function () {
 	popPill("#container2", "#sec2");
 	popPill("#container3", "#sec3");
 	popPill("#container4", "#sec4");
+	popPill("#container5", "#sec5");
 
 	navbarScroll("#secIntro", "#introContainer");
 	navbarScroll("#introVidPt", "#introVid");
@@ -90,8 +91,13 @@ $(document).ready(function () {
 	navbarScroll("#sec2", "#container2");
 	navbarScroll("#sec3", "#container3");
 	navbarScroll("#sec4", "#container4");
+	navbarScroll("#sec5", "#container5");
 
 	autoPlay("#introVid", "coupleintro", "#container1");
+	// autoPlayforSticky("#container1", "awomansissue");
+	autoPlay("#container2", "unequalinfo1", "#bottomvideo");
+	autoPlay("#bottomvideo", "unequalinfo2", "#container3");
+	// autoPlayforSticky("#container3", "pfpcfc");
 
 
 	$(".item").stick_in_parent()
