@@ -47,16 +47,6 @@ var autoPlay = function(wayPoint, video, pausePoint) {
 	});
 };
 
-var autoPlayforSticky = function(wayPoint, video) {
-
-	var myVideo = document.getElementById(video)
-
-	$(wayPoint).waypoint(function () {
-		myVideo.play();
-	});
-}
- 
-
 $(document).ready(function () {
 
 	stickyWidthFix();
@@ -94,11 +84,8 @@ $(document).ready(function () {
 	navbarScroll("#sec5", "#container5");
 
 	autoPlay("#introVid", "coupleintro", "#container1");
-	// autoPlayforSticky("#container1", "awomansissue");
 	autoPlay("#container2", "unequalinfo1", "#bottomvideo");
 	autoPlay("#bottomvideo", "unequalinfo2", "#container3");
-	// autoPlayforSticky("#container3", "pfpcfc");
-
 
 	$(".item").stick_in_parent()
 		.on("sticky_kit:stick", function(e) {
