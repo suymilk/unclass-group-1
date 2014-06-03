@@ -93,9 +93,9 @@ html, body {
 #intro {
 	font-family: "Lato", sans-serif;
 	width: 100%;
-	text-align: left;
-	margin-top: 25%;
-	position: relative;
+	text-align: justify;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 #introContainer, #introVid, #closingVid{
 	height: 100%;
@@ -104,20 +104,8 @@ html, body {
 	padding-top: 3%;
 	padding-bottom: 3%;
 }
-
 #closingVid{
 	margin-bottom: 5%;
-}
-#pullquote {
-	font-family: "Lato", sans-serif;
-	width: 100%;
-	text-align: left;
-	margin-top: 25%;
-	position: relative;
-	color: #2b3865;
-}
-#pullquoteContainer {
-	height: 100%;
 }
 p {
 	margin-top: 3%;
@@ -169,39 +157,57 @@ h2 {
 img {
 	width: 100%;  
 }
-#clear1, #clear2, #clear3, #clear4 {
-	height: 10px;
+#clear1, #clear2, #clear3, #clear4, #clear5, #clear6 {
+	height: 50px;
 }
 .subhead {
 	margin-bottom: 1%;
 }
-#container1, #container2, #container3, #container4 {
-
-	margin-bottom: 5%;
+#container1, #container2, #container3, #container4, #container5, #container6 {
+	margin-bottom: 3%;
 }
-
 h3 {
 	font-family: "Oswald", sans-serif;
 }
-#bijan {
+.bijan, .julia {
+	width: 50%;
+}
+.bijan {
 	color: #2b3865;
-	position: relative;
-	padding-top: 250%;
 	text-align: right;
+	float: left;
+	padding-right: 2%;
 }
-#julia {
+.julia {
 	text-align: left;
-	position: relative;
-	padding-top: 150%;
+	padding-left: 2%;
+	float: right;
 	color: #f45676;
-
 }
-.subhead {
+.blue, .pink {
+	padding-top: 2%;
+	padding-bottom: 2%;
 	text-align: center;
-	background-color: #f45676;
 	width: 100%;
 }
-.subhead h2 {
+.blue {
+	background-color: #2b3865;
+}
+.pink {
+	background-color: #f45676;
+}
+.blue h2, .pink h2 {
 	font-size: 5em;
 	color: #fff;
+}
+.text {
+	width: 60%;
+	margin-left: 20%;
+	font-size: 1.3em;
+}
+#awomansissue, #pfpcfc, #powerpill, #malebc{
+	width: 50%;
+}
+.pics {
+	width: 50%;
 }

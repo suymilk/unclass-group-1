@@ -68,36 +68,6 @@ $(document).ready(function () {
 		});
 	});	
 
-	popPill("#introVid", "#introVidPt");
-	popPill("#container1", "#sec1");
-	popPill("#container2", "#sec2");
-	popPill("#container3", "#sec3");
-	popPill("#container4", "#sec4");
-	popPill("#container5", "#sec5");
-
-	navbarScroll("#secIntro", "#introContainer");
-	navbarScroll("#introVidPt", "#introVid");
-	navbarScroll("#sec1", "#container1");
-	navbarScroll("#sec2", "#container2");
-	navbarScroll("#sec3", "#container3");
-	navbarScroll("#sec4", "#container4");
-	navbarScroll("#sec5", "#container5");
-
-	autoPlay("#introVid", "coupleintro", "#container1");
-	autoPlay("#container2", "unequalinfo1", "#bottomvideo");
-	autoPlay("#bottomvideo", "unequalinfo2", "#container3");
-
-	$(function() {
-
-		var myVideo = document.getElementById("closing")
-
-		$(closingVid).waypoint(function() {
-			myVideo.play();
-		}, {
-			triggerOnce: true
-		});
-	});
-
 	// make sure navbar stays on top of page except for landing
 	$(function() {
 		$(introContainer).waypoint(function(direction) {
@@ -108,5 +78,40 @@ $(document).ready(function () {
 			}
 
 		})
+	});
+
+	popPill("#container1", "#sec1");
+	popPill("#container2", "#sec2");
+	popPill("#container3", "#sec3");
+	popPill("#container4", "#sec4");
+	popPill("#container5", "#sec5");
+	popPill("#container6", "#closingVidPt");
+
+	navbarScroll("#secIntro", "#introContainer");
+	navbarScroll("#sec1", "#container1");
+	navbarScroll("#sec2", "#container2");
+	navbarScroll("#sec3", "#container3");
+	navbarScroll("#sec4", "#container4");
+	navbarScroll("#sec5", "#container5");
+	navbarScroll("#closingVidPt", "#container6");
+
+	autoPlay("#introVid", "coupleintro", "#container1");
+	autoPlay("#container1", "awomansissue", "#container2");
+	autoPlay("#container2", "unequalinfo1", "#bottomvideo");
+	autoPlay("#bottomvideo", "unequalinfo2", "#container3");
+	autoPlay("#container3", "pfpcfc", "#container4");
+	autoPlay("#container4", "powerpill", "#container5");
+	autoPlay("#container5", "malebc", "#container6");
+	autoPlay("#container6", "closing", "#clear6");
+
+	$(function() {
+
+		var myVideo = document.getElementById("closing")
+
+		$(closingVid).waypoint(function() {
+			myVideo.play();
+		}, {
+			triggerOnce: true
+		});
 	});
 });
