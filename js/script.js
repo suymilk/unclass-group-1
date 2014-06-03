@@ -97,4 +97,16 @@ $(document).ready(function () {
 			triggerOnce: true
 		});
 	});
+
+	// make sure navbar stays on top of page except for landing
+	$(function() {
+		$(introContainer).waypoint(function(direction) {
+			if (direction == "down") {
+				$(".navbar").css("z-index", "100");
+			} else {
+				$(".navbar").css("z-index", "-1");
+			}
+
+		})
+	});
 });

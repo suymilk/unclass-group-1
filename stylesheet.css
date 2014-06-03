@@ -82,7 +82,7 @@ html, body {
 	background-color: #eee;
 	font-size: 1.2em;
 }
-.container-fluid {
+#landingpage {
 	width: 100%;
 	max-width: 1824px;
 	height: 100%;
@@ -179,99 +179,7 @@ img {
 
 	margin-bottom: 5%;
 }
-.is_stuck {
-	float: right;
-}
-h3 {
-	font-family: "Oswald", sans-serif;
-}
-=======
-}
-#intro {
-	font-family: "Lato", sans-serif;
-	width: 100%;
-	text-align: left;
-	margin-top: 25%;
-	position: relative;
-}
-#introContainer, #introVid, #closingVid{
-	height: 100%;
-}
-#introVid, #closingVid {
-	padding-top: 3%;
-	padding-bottom: 3%;
-}
-#pullquote {
-	font-family: "Lato", sans-serif;
-	width: 100%;
-	text-align: left;
-	margin-top: 25%;
-	position: relative;
-	color: #2b3865;
-}
-#pullquoteContainer {
-	height: 100%;
-}
-p {
-	margin-top: 3%;
-	font-size: 1.2em;
-}
-#sec1right, #sec2right, #sec3right, #sec4right {
-	margin-bottom: 40px;
-}
-#sec1right {
-	float: right;
-}
-.navbar img {
-	width: 30px;
-	height: 30px;
-	margin-top: 5px;
-	margin-left: 40px;
-}
-.navbar img:hover {
-	cursor: pointer;
-}
-.navbar p {
-	font-size: 0.7em;
-	margin-bottom: 5px;
-	text-align: right;
-	margin-right: 12px;
-}
-.navbar {
-	z-index: -1;
-	position: fixed;
-	top: 15%;
-	margin-left: 5px;
-	left: 93%;
-	padding-left: 10px;
-	padding-top: 3.5%;
-	background-image: url("pics/packaging.png");
-	padding-bottom: 35px;
-	border: 0 #ffffff;
-}
-h1 {
-	text-transform: uppercase;
-}
-h2 {
-	font-family: "Oswald", sans-serif;
-	color: #f45676;
-}
-img {
-	width: 100%;
-}
-#clear1, #clear2, #clear3, #clear4 {
-	height: 10px;
-}
-.subhead {
-	width: 100%;
-	margin-bottom: 1%;
-}
-#container1, #container2, #container3, #container4 {
-	margin-bottom: 5%;
-}
-.is_stuck {
-	float: right;
-}
+
 h3 {
 	font-family: "Oswald", sans-serif;
 }
@@ -287,4 +195,13 @@ h3 {
 	padding-top: 150%;
 	color: #f45676;
 
+}
+.subhead {
+	text-align: center;
+	background-color: #f45676;
+	width: 100%;
+}
+.subhead h2 {
+	font-size: 5em;
+	color: #fff;
 }
