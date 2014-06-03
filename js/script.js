@@ -68,11 +68,6 @@ $(document).ready(function () {
 		});
 	});	
 
-	$(".item").stick_in_parent()
-	.on("sticky_kit:stick", function(e) {
-		$(".is_stuck").parent().css('position', '');
-	});
-
 	popPill("#introVid", "#introVidPt");
 	popPill("#container1", "#sec1");
 	popPill("#container2", "#sec2");

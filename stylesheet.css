@@ -87,7 +87,6 @@ html, body {
 	max-width: 1824px;
 	height: 100%;
 	background-image:url("pics/couple.jpg");
-<<<<<<< HEAD
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -153,7 +152,6 @@ p {
 	margin-left: 5px;
 	left: 93%;
 	padding-left: 10px;
-	padding-top: 50px;
 	background-image: url("pics/packaging.png");
 	padding-bottom: 35px;
 	border: 0 #ffffff;
@@ -242,11 +240,11 @@ p {
 .navbar {
 	z-index: -1;
 	position: fixed;
-	top: 5px;
+	top: 15%;
 	margin-left: 5px;
 	left: 93%;
 	padding-left: 10px;
-	padding-top: 50px;
+	padding-top: 3.5%;
 	background-image: url("pics/packaging.png");
 	padding-bottom: 35px;
 	border: 0 #ffffff;
