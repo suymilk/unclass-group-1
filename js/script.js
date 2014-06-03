@@ -14,12 +14,9 @@ var popPill = function(wayPoint, navPoint) {
 	$(wayPoint).waypoint(function(direction) {
 		if (direction == "down") {
 			$(navPoint).attr("src", "pics/poppedpill.png");
-			$(document.body).trigger("sticky_kit:recalc")
-
 		}
 		else {
 			$(navPoint).attr("src", "pics/pinkpill.png");
-			$(document.body).trigger("sticky_kit:recalc")
 		};
 	});
 };
@@ -36,10 +33,12 @@ var autoPlay = function(wayPoint, video, pausePoint) {
 
 	var myVideo = document.getElementById(video)
 
-	$(wayPoint).waypoint(function() {
-		myVideo.play();
-	}, {
-		triggerOnce: true
+	$(wayPoint).waypoint(function(direction) {
+		if (direction == "down") {
+			myVideo.play();
+		} else {
+			myVideo.pause();
+		};
 	});
 
 	$(pausePoint).waypoint(function() {
@@ -104,14 +103,4 @@ $(document).ready(function () {
 	autoPlay("#container5", "malebc", "#container6");
 	autoPlay("#container6", "closing", "#clear6");
 
-	$(function() {
-
-		var myVideo = document.getElementById("closing")
-
-		$(closingVid).waypoint(function() {
-			myVideo.play();
-		}, {
-			triggerOnce: true
-		});
-	});
 });
