@@ -33,7 +33,7 @@ var navbarScroll = function(clickImg, scrollToHere) {
 };
 
 var autoPlay = function(wayPoint, video, pausePoint) {
-	
+
 	var myVideo = document.getElementById(video)
 
 	$(wayPoint).waypoint(function() {
@@ -93,7 +93,7 @@ $(document).ready(function () {
 	autoPlay("#bottomvideo", "unequalinfo2", "#container3");
 
 	$(function() {
-		
+
 		var myVideo = document.getElementById("closing")
 
 		$(closingVid).waypoint(function() {
