@@ -95,11 +95,11 @@ $(document).ready(function () {
 	navbarScroll("#sec5", "#container5");
 	navbarScroll("#closingVidPt", "#container6");
 
-	$(function () {
-		$("#disable").on("click", function() {
-			$("video").off();
-		})
-	})	
+	// $(function () {
+	// 	$("#disable").on("click", function() {
+	// 		$("video").off();
+	// 	})
+	// })	
 
 	autoPlay("#intro", "coupleintro", "#container1");
 	autoPlay("#container1", "awomansissue", "#container2");
