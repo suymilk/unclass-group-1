@@ -51,7 +51,17 @@ var autoPlay = function(wayPoint, video, pausePoint) {
 
 $(document).ready(function () {
 
-	stickyWidthFix();
+	// make sure navbar stays on top of page except for landing
+	$(function() {
+		$(introContainer).waypoint(function(direction) {
+			if (direction == "down") {
+				$(".navbar").css("z-index", "100");
+			} else {
+				$(".navbar").css("z-index", "-1");
+			}
+
+		})
+	});
 
 	// fade in speech bubble first
 	$(function() {
@@ -70,20 +80,6 @@ $(document).ready(function () {
 		});
 	});	
 
-	// make sure navbar stays on top of page except for landing
-	$(function() {
-		$(introContainer).waypoint(function(direction) {
-			if (direction == "down") {
-				$(".navbar").css("z-index", "100");
-			} else {
-				$(".navbar").css("z-index", "-1");
-			}
-
-		})
-	});
-
-	
-	
 	popPill("#container1", "#sec1");
 	popPill("#container2", "#sec2");
 	popPill("#container3", "#sec3");

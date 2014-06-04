@@ -8,11 +8,12 @@ html, body {
 }
 #bubble1 {
 	font-family: "Oswald", sans-serif;
-	font-size: 4.3vw;
-	padding: 10px 0px 10px 25px;
+	font-size: 4vw;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	position: relative;
 	width: 100%;
-	height: 95px;
 	background: white;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -22,12 +23,12 @@ html, body {
 	content: '';
 	position: absolute;
 	border-style: solid;
-	border-width: 0px 0px 40px 40px;
+	border-width: 0px 0px 30px 30px;
 	border-color: transparent white;
 	display: block;
 	width: 0;
 	z-index: 1;
-	bottom: -20px;
+	bottom: -30px;
 	left: 10%;
 }
 #bubble2 {
@@ -36,9 +37,10 @@ html, body {
 	font-family: "Lato", sans-serif;
 	font-size: 4vw;
 	position: relative;
-	padding: 12px 0px 10px 30px;
 	width: 100%;
-	height: 90px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
 	background: white;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -49,12 +51,12 @@ html, body {
 	content: '';
 	position: absolute;
 	border-style: solid;
-	border-width: 0px 0px 40px 40px;
+	border-width: 0px 0px 30px 30px;
 	border-color: transparent white;
 	display: block;
 	width: 0;
 	z-index: 1;
-	bottom: -20px;
+	bottom: -30px;
 	left: 5%;
 }
 #byline, #teaser {
@@ -71,6 +73,7 @@ html, body {
 	font-size: 1.2em; 
 	padding-left: 10%; 
 	padding-right: 10%;
+	text-shadow: 0.3px 0.3px #7f7f7f;
 }
 #begin {
 	display: none;
@@ -81,7 +84,7 @@ html, body {
 	padding-left: 15px;
 	padding-right: 15px;
 	border: none;
-	border-radius: 0;
+	border-radius: 2px;
 	background: none;
 	background-color: #fff;
 	font-size: 1.2em;
@@ -90,7 +93,7 @@ html, body {
 	width: 100%;
 	max-width: 1824px;
 	height: 100%;
-	background-image:url("pics/couple.png");
+	background-image:url("pics/couple.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -208,6 +211,9 @@ h3 {
 	width: 60%;
 	margin-left: 20%;
 	font-size: 1.3em;
+}
+.videos {
+	width: 60%;
 }
 #awomansissue, #pfpcfc, #powerpill, #malebc{
 	width: 50%;
