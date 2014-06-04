@@ -97,7 +97,7 @@ $(document).ready(function () {
 
 	autoPlay("#intro", "coupleintro", "#container1");
 	autoPlay("#container1", "awomansissue", "#container2");
-	autoPlay("#container2", "unequalinfo1", "#bottomvideo");
+	autoPlay("#container2", "unequalinfo1", ".julia");
 	autoPlay("#bottomvideo", "unequalinfo2", "#container3");
 	autoPlay("#container3", "pfpcfc", "#container4");
 	autoPlay("#container4", "powerpill", "#container5");
