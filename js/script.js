@@ -97,7 +97,7 @@ $(document).ready(function () {
 
 	$(function () {
 		$("#disable").on("click", function() {
-			$("video").unbind("autoPlay");
+			$("video").off();
 		})
 	})	
 
