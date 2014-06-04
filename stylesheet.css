@@ -72,7 +72,7 @@ html, body {
 	padding-left: 10%; 
 	padding-right: 10%;
 }
-#button {
+#begin {
 	display: none;
 	margin-left: 40%;
 	margin-top: 30%;
@@ -90,7 +90,7 @@ html, body {
 	width: 100%;
 	max-width: 1824px;
 	height: 100%;
-	background-image:url("pics/couple.jpg");
+	background-image:url("pics/couple.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -104,11 +104,11 @@ html, body {
 #introContainer, #introVid, #closingVid{
 	height: 100%;
 }
-#introVid, #closingVid {
-	padding-top: 3%;
-	padding-bottom: 3%;
+#introVid {
+	margin-bottom: 5%;
 }
 #closingVid{
+	padding-top: 3%;
 	margin-bottom: 5%;
 }
 p {

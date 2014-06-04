@@ -10,6 +10,7 @@ var stickyWidthFix = function() {
 	fixed.width(width);
 };
 
+// change navbar pill to appear 'popped'
 var popPill = function(wayPoint, navPoint) {
 	$(wayPoint).waypoint(function(direction) {
 		if (direction == "down") {
@@ -21,6 +22,7 @@ var popPill = function(wayPoint, navPoint) {
 	});
 };
 
+// allow user to click to specific section via navbar
 var navbarScroll = function(clickImg, scrollToHere) {
 	$(clickImg).on("click", function() {
 		$.scrollTo(scrollToHere, 600, {
@@ -29,6 +31,7 @@ var navbarScroll = function(clickImg, scrollToHere) {
 	});
 };
 
+// autoplay the videos, pause on scroll down or past container
 var autoPlay = function(wayPoint, video, pausePoint) {
 
 	var myVideo = document.getElementById(video)
@@ -58,11 +61,11 @@ $(document).ready(function () {
 	// then the rest of the elements
 	fadeInSlow("#byline");
 	fadeInSlow("#teaser");
-	fadeInSlow("#button");
+	fadeInSlow("#begin");
 
 	// scroll to intro page on button click
 	$(function () {
-		$("button").on("click", function() {
+		$("#begin").on("click", function() {
 			$.scrollTo(".container", 800);
 		});
 	});	
@@ -79,6 +82,8 @@ $(document).ready(function () {
 		})
 	});
 
+	
+	
 	popPill("#container1", "#sec1");
 	popPill("#container2", "#sec2");
 	popPill("#container3", "#sec3");
@@ -94,7 +99,7 @@ $(document).ready(function () {
 	navbarScroll("#sec5", "#container5");
 	navbarScroll("#closingVidPt", "#container6");
 
-	autoPlay("#introVid", "coupleintro", "#container1");
+	autoPlay("#intro", "coupleintro", "#container1");
 	autoPlay("#container1", "awomansissue", "#container2");
 	autoPlay("#container2", "unequalinfo1", "#bottomvideo");
 	autoPlay("#bottomvideo", "unequalinfo2", "#container3");
